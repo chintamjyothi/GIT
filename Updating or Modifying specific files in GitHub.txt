@@ -1,0 +1,234 @@
+How to update the file in GitHub:
+=================================
+
+1. Clone the branch from repository.
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Docume  
+                                                                                          nts/GFR/GFR
+$ git clone -b CE https://github.dev.global.tesco.org/25Finance/ReIM16_CustomScr                                                                                            ipts.git
+Cloning into 'ReIM16_CustomScripts'...
+remote: Enumerating objects: 20, done.
+remote: Counting objects: 100% (20/20), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 16057 (delta 6), reused 2 (delta 0), pack-reused 16037
+Receiving objects: 100% (16057/16057), 41.77 MiB | 450.00 KiB/s, done.
+Resolving deltas: 100% (8498/8498), done.
+
+2. Copy the file which we need to update or modify into specific location and open git gui there.
+
+3. Open git gui and select the files and click on commit by giving commit message.
+
+3. Then push the code to origin by using push button.
+
+
+How to update the file in GitCLI:
+===================================
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Docume                                                                                            nts/GFR/GitHubTest/Gani (bokka)
+$ git clone -b bokka https://github.com/ganeshjarugu/Gani.git
+Cloning into 'Gani'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 89 (delta 0), reused 4 (delta 0), pack-reused 85
+Unpacking objects: 100% (89/89), done.
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Docume                                                                                            nts/GFR/GitHubTest/Gani
+$ cd Gani
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ dir
+Cut\ Over\ Phases.txt  Gani.txt  README.md
+
+
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git status
+On branch bokka
+Your branch is up-to-date with 'origin/bokka'.
+
+nothing to commit, working tree clean
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git log
+commit 8e85ce69ff8df8bf3fb688605e30826f608ba996 (HEAD -> bokka, origin/bokka)
+Author: Kumarreddy <jaruguganesh.kumarreddy@tesco.com>
+Date:   Mon Jun 3 14:40:38 2019 +0530
+
+    Updated
+
+commit 80d29b27d824cce3a1aaeaa635d913c76adddf74 (origin/co)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Mon Dec 3 13:21:08 2018 +0530
+
+    Uploaded new file
+
+commit 78385d7e1f4a0f41a3683ac929caa0ae42bba24e (tag: 1.0.0)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Tue Nov 13 17:23:01 2018 +0530
+
+    New File Creation
+
+commit 2a4934fa17c78c5e4889196992aa8d62f9e79fdb
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Tue Nov 13 17:19:44 2018 +0530
+
+    Added new file
+
+commit c920f0951299a8f213b652c110568a4313551df1 (origin/test2, origin/reddy1)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Wed Feb 7 03:40:56 2018 +0530
+
+    Initial commit
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ vi Gani.txt
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git status
+On branch bokka
+Your branch is up-to-date with 'origin/bokka'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Gani.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git add Gani.txt
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git status
+On branch bokka
+Your branch is up-to-date with 'origin/bokka'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Gani.txt
+
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git branch
+* bokka
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git status
+On branch bokka
+Your branch is up-to-date with 'origin/bokka'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Gani.txt
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git commit -m "Updated Gani.txt"
+[bokka 7da5edb] Updated Gani.txt
+ Committer: Kumarreddy <jaruguganesh.kumarreddy@tesco.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git log
+commit 7da5edb7edd76bd28b330bfd45c818abfb786699 (HEAD -> bokka)
+Author: Kumarreddy <jaruguganesh.kumarreddy@tesco.com>
+Date:   Mon Jun 3 14:54:13 2019 +0530
+
+    Updated Gani.txt
+
+commit 8e85ce69ff8df8bf3fb688605e30826f608ba996 (origin/bokka)
+Author: Kumarreddy <jaruguganesh.kumarreddy@tesco.com>
+Date:   Mon Jun 3 14:40:38 2019 +0530
+
+    Updated
+
+commit 80d29b27d824cce3a1aaeaa635d913c76adddf74 (origin/co)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Mon Dec 3 13:21:08 2018 +0530
+
+    Uploaded new file
+
+commit 78385d7e1f4a0f41a3683ac929caa0ae42bba24e (tag: 1.0.0)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Tue Nov 13 17:23:01 2018 +0530
+
+    New File Creation
+
+commit 2a4934fa17c78c5e4889196992aa8d62f9e79fdb
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Tue Nov 13 17:19:44 2018 +0530
+
+    Added new file
+
+commit c920f0951299a8f213b652c110568a4313551df1 (origin/test2, origin/reddy1)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Wed Feb 7 03:40:56 2018 +0530
+
+    Initial commit
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git push origin
+fatal: HttpRequestException encountered.
+   An error occurred while sending the request.
+Username for 'https://github.com': ganeshjarugu
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 368 bytes | 184.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/ganeshjarugu/Gani.git
+   8e85ce6..7da5edb  bokka -> bokka
+
+INE12362333@INLTH5CG7041LHP MINGW64 /c/Users/INE12362333/OneDrive - Tesco/Documents/GFR/GitHubTest/Gani/Gani
+$ git log
+commit 7da5edb7edd76bd28b330bfd45c818abfb786699 (HEAD -> bokka, origin/bokka)
+Author: Kumarreddy <jaruguganesh.kumarreddy@tesco.com>
+Date:   Mon Jun 3 14:54:13 2019 +0530
+
+    Updated Gani.txt
+
+commit 8e85ce69ff8df8bf3fb688605e30826f608ba996
+Author: Kumarreddy <jaruguganesh.kumarreddy@tesco.com>
+Date:   Mon Jun 3 14:40:38 2019 +0530
+
+    Updated
+
+commit 80d29b27d824cce3a1aaeaa635d913c76adddf74 (origin/co)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Mon Dec 3 13:21:08 2018 +0530
+
+    Uploaded new file
+
+commit 78385d7e1f4a0f41a3683ac929caa0ae42bba24e (tag: 1.0.0)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Tue Nov 13 17:23:01 2018 +0530
+
+    New File Creation
+
+commit 2a4934fa17c78c5e4889196992aa8d62f9e79fdb
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Tue Nov 13 17:19:44 2018 +0530
+
+    Added new file
+
+commit c920f0951299a8f213b652c110568a4313551df1 (origin/test2, origin/reddy1)
+Author: ganeshjarugu <36210807+ganeshjarugu@users.noreply.github.com>
+Date:   Wed Feb 7 03:40:56 2018 +0530
+
+    Initial commit
+
